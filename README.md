@@ -18,4 +18,4 @@ An offline-first, privacy-focused agent pipeline designed to parse sensitive uns
 - **Challenge:** Hacktoberfest Weekend Challenge 1 (Build for a Friend)
 - **Target Category:** Best Use of Gemma
 - **Primary Repository:** rcortez056-spec
-- **DEV Submission Post:** [Building a Private, Local Lead & Note Triage Agent for a Freelance Colleague](https://dev.to/rcortez056/building-a-private-local-lead-note-triage-agent-for-a-freelance-colleague-542h)
+- **DEV Submission Post:** [Building a Private, Local Lead & Note Triage Agent for a Freelance Colleague](https://dev.to/rcortez056/building-a-private-local-lead-note-triage-agent-for-a-freelance-colleague-54fm)
