@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PrivateTextTriagePayload",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "timestamp": { "type": "string", "format": "date-time" },
+        "source_type": { "type": "string", "enum": ["client_note", "study_transcript", "lead_submission"] },
+        "privacy_level": { "type": "string", "enum": ["local_only", "encrypted_storage"] }
+      },
+      "required": ["timestamp", "source_type", "privacy_level"]
+    },
+    "input_data": {
+      "type": "object",
+      "properties": {
+        "raw_text": { "type": "string" },
+        "target_recipient": { "type": "string" }
+      },
+      "required": ["raw_text"]
+    },
+    "parsed_output": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string" },
+        "action_items": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "urgency_rating": { "type": "string", "enum": ["low", "medium", "high"] }
+      }
+    }
+  },
+  "required": ["metadata", "input_data"]
+}
